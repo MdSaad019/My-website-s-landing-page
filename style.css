@@ -1,0 +1,361 @@
+Basic Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e8;
+    color: #0b1b2a;
+}
+
+
+/* Header */
+header { 
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background-color: #0b1b2a;
+
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c7a66b;
+}
+
+/* Hero */
+
+.hero{
+
+    overflow: hidden;
+
+    display: flex;
+}
+
+.hero-text {
+    width: 100%;
+
+    padding: 60px;
+
+    text-align: center;
+
+    /* float: left; */
+}
+
+.small-title {
+    color: #a17b3e;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #a17b3e;
+
+    font-style: italic;
+}
+
+.hero-text > p:not(.small-title) {
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    background-color: #0b1b2a;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    border: 1px solid #0b1b2a;
+}
+
+.button:hover {
+    background-color: #c7a66b;
+
+    border-color: #c7a66b;
+}
+
+/* Hero Image  */
+
+.hero-image {
+    width: 50%;
+
+    align-items: center;
+
+    padding: 70px 8%;
+
+    gap: 60px;
+
+}
+
+.hero-image img {
+    width: 100%;
+
+    height: 500px;
+
+    align-items: center;
+
+    border: 10px black dotted;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+
+/* Collection */
+
+.collection {
+    background-color: #0b1b2a;
+
+    color: white;
+
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+.collection h2 {
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #aaa;
+
+    margin-bottom: 50px;
+}
+
+
+.products {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.product {
+    background-color: #132638;
+
+    padding-bottom: 25px;
+}
+
+.product img {
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+}
+
+.product h3 {
+    margin-top: 20px;
+
+    font-family: Georgia, serif;
+
+    color: #e0c58f;
+}
+
+.product p {
+    margin-top: 8px;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+
+/* About */
+
+.about {
+    padding: 100px 8%;
+
+    background-color: #f5f0e8;
+}
+
+.about{
+    max-width: 650px;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.about p {
+    color: #555;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: #dcd0bd;
+}
+
+.contact h2 {
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+/* promo */
+
+.promoimg{
+    width: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0px 0%;
+
+    gap: 60px;
+
+}
+
+.promoimg img{
+    width: 60%;
+
+    height: 590px;
+
+    display: block;
+}
+
+.offer{
+    width: 100%;
+
+    text-align: center;
+}
+
+.promo h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    color: #d9bc83;
+}
+
+.promo p {
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #050d14;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.footer h3 {
+    color: #d9bc83;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #888;
+
+    font-size: 12px;
+
+    margin-top: 10px;
+}
